@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework><Nullable>disable</Nullable><ImplicitUsings>enable</ImplicitUsings><AssemblyName>FarseerBench</AssemblyName></PropertyGroup>
+  <ItemGroup>
+    <Reference Include="VintagestoryAPI"><HintPath>$(APPDATA)\Vintagestory\VintagestoryAPI.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Farseer"><HintPath>..\..\work\stock\Farseer.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

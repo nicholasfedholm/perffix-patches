@@ -1,0 +1,1 @@
+{ "type": "code", "modid": "farseerbench", "name": "Farseer Bench Harness", "version": "0.1.0", "side": "Server", "requiredOnClient": false, "dependencies": { "game": "", "farseer": "" } }
