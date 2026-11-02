@@ -1,7 +1,7 @@
 # Farseer perffix (Farseer 1.4.0)
 
 - Original mod: Farseer (modid `farseer`), by Badgerson.
-- ModDB page: search the mod name "Farseer" (no URL found in local files).
+- ModDB page: https://mods.vintagestory.at/show/mod/22371 (from a comment in the mod's own lang file).
 - Unofficial patch. You need the original `farseer_1.4.0.zip`; nothing of the original is included here.
 
 ## What it changes and why
