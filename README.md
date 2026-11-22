@@ -37,3 +37,12 @@ Each folder has its own README with the ModDB link (or how to find it), what cha
 | Footprints work dir `footprints-perffix` | Contains only the task prompt; the actual patcher lives in the audit folder (staged here) |
 
 No patch script was excluded for embedding third-party code: the patchers use small anchor names (type/method names) to locate patch points and emit our own IL.
+
+## Bundling note: StuckParryFix inside the local combatoverhaulfork build
+
+The local perffix build of combatoverhaulfork 0.18.9 carries one extra root-level assembly, StuckParryFix.dll (third-party, by SiiMeR, v1.0.1, unmodified bytes). Vintage Story loads every root .dll of a code mod, so the separate stuckparryfix mod is no longer needed.
+
+- The build is otherwise unchanged: upstream CombatOverhaul.dll plus one changed recipe json (slingbullet.json); modinfo.json is unchanged.
+- The fix patches CombatOverhaul parry handling (server block timeout, client stop-parry) via Harmony and needs overhaulliblegacycompat 1.2.15 or newer.
+- Archives and dlls are not tracked in this repo.
+
