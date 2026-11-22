@@ -1,6 +1,6 @@
 # Farseer perffix - results (2026-10-24)
 Bench: headless VintagestoryServer 1.22.7, isolated data path (bench\data\<run>), seed 424242, same terrain stack as live (sampler 1.3.0, watersheds 7.0.4-perffix [bench-time version; Mods now has watersheds_7.0.6-perffix.zip as of 2026-11-01], TerraPrety + default, P5WorldgenEngine, rivers 5.0.3, live ModConfig copies). 24 far regions (5x5 ring around the map centre), grid 128, requested at once through Farseer's own TerrainSamplerAdapter. Pass 1 = cold sampler caches, pass 2 = warm. Sampler path: WatershedsLoaded=True.
-Contention: about 15 dotnet.exe and 5 claude.exe processes were running (other sessions/builds); the game was not running. Each figure is one run, so expect roughly ±10% noise. Compare runs against each other only.
+Contention: about 15 dotnet.exe and 5 other tool processes were running (other sessions/builds); the game was not running. Each figure is one run, so expect roughly ±10% noise. Compare runs against each other only.
 
 ## Gates
 | Gate | Result |
